@@ -70,11 +70,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:text="@string/recently_played"
                 android:textColor="@android:color/white"
-                android:textSize="16sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -87,69 +86,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/for_you"
+                android:layout_margin="5dp"
                 android:textColor="@android:color/white"
-                android:textSize="16sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imgForYou"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="25dp"
-                android:minWidth="250dp"
-                android:minHeight="250dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="12dp"
-                android:text="Null - Null - Null - Null"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="ve daha fazlası"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/daily_mixes_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:layout_marginTop="6dp"
-                android:orientation="horizontal" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:layout_marginBottom="16dp"
-                android:text="@string/advice_for_you"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/advice_for_you_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="vertical" />
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" />
 
 
         </LinearLayout>
