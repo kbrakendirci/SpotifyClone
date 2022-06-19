@@ -58,7 +58,7 @@ class HomeFragment : Fragment() {
         adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/ab67616d0000b273d883931be2f5cdf9c9270088", "Feelin Good"))
         adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/7f587bc2606cdd9907d7452e92a2158c63fa8a6e", "Yeni Müzik Radarı"))
          //adviceAlbums.add(AdviceForYouDTO("https://m.media-amazon.com/images/I/51hJnI9-rZL._AA256_.jpg", "Under the Covers by Alice Fredenham"))
-        adviceAlbums.add(AdviceForYouDTO("https://lineup-images.scdn.co/wrapped-2021-top100_LARGE-tr.jpg", "En Çok Dinlediğin Şarkılar"))
+        adviceAlbums.add(AdviceForYouDTO("https://lineup-images.scdn.co/wrapped-2021-top100_LARGE-tr.jpg", "2021 Şarkıların"))
 
 
          val adviceAdapter = AdviceForYouAdapter(adviceAlbums)
