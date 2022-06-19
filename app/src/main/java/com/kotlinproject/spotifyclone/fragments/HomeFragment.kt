@@ -8,14 +8,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.kotlinproject.spotifyclone.Data.AdviceForYouDTO
+import com.kotlinproject.spotifyclone.Data.OnBoard
 import com.kotlinproject.spotifyclone.Data.RecentPlayedDTO
 import com.kotlinproject.spotifyclone.R
 import com.kotlinproject.spotifyclone.adapters.AdviceForYouAdapter
+import com.kotlinproject.spotifyclone.adapters.OnBoardAdapters
 import com.kotlinproject.spotifyclone.adapters.RecentRecyclerAdapter
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class HomeFragment : Fragment() {
@@ -38,6 +42,8 @@ class HomeFragment : Fragment() {
         val adviceRecycler = view.findViewById<RecyclerView>(R.id.advice_for_you_recycler)
         adviceRecycler.layoutManager = LinearLayoutManager(view.context, RecyclerView.VERTICAL, false)
 
+        val  OnBoardAdapters: OnBoardAdapters
+       var dataList = mutableListOf<OnBoard>()
 
         val albums = ArrayList<RecentPlayedDTO>()
         albums.add(RecentPlayedDTO("https://i.pinimg.com/236x/9d/e7/7a/9de77a1ffc2cd752887d04f1dffb1650.jpg", "Feenixpawl - Love me for life"))
@@ -68,6 +74,21 @@ class HomeFragment : Fragment() {
         adviceRecycler.adapter = adviceAdapter
 
         adviceRecycler.isNestedScrollingEnabled = false
+
+        val onBoardCardView = view.findViewById<RecyclerView>(R.id.onBoardCardView)
+
+        onBoardCardView.layoutManager = GridLayoutManager(view.context,2)
+        OnBoardAdapters = OnBoardAdapters(view.context)
+        onBoardCardView.adapter = OnBoardAdapters
+
+        //add data
+        dataList.add(OnBoard("Title",R.drawable.search))
+        dataList.add(OnBoard("Title",R.drawable.search))
+        dataList.add(OnBoard("Title",R.drawable.search))
+        dataList.add(OnBoard("Title",R.drawable.search))
+
+
+        OnBoardAdapters.setDataList(dataList)
 
         return view
     }
