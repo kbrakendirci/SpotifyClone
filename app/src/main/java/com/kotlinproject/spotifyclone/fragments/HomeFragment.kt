@@ -47,10 +47,7 @@ class HomeFragment : Fragment() {
         albums.add(RecentPlayedDTO("https://m.media-amazon.com/images/I/51hJnI9-rZL._AA256_.jpg", "Under the Covers"))
         albums.add(RecentPlayedDTO("https://lineup-images.scdn.co/time-capsule_DEFAULT-en.jpg", "Zaman Kapsülün"))
         albums.add(RecentPlayedDTO("https://spotify.i.lithium.com/t5/image/serverpage/image-id/60013i7710A8EFA4ECD096/image-size/large?v=1.0&px=999", "Haftalık Keşif"))
-        albums.add(RecentPlayedDTO("https://i.scdn.co/image/913c7ccb86562d204b191ae6eed52c2853b90094", "In My Mind"))
-        albums.add(RecentPlayedDTO("https://i.scdn.co/image/7f587bc2606cdd9907d7452e92a2158c63fa8a6e", "Yeni Müzik Radarı"))
-        albums.add(RecentPlayedDTO("https://lineup-images.scdn.co/wrapped-2021-top100_LARGE-tr.jpg", "Future Music"))
-        albums.add(RecentPlayedDTO("https://i.scdn.co/image/fece8f48a6aee190dd775ceb8573e549275a44f0", "Skrillex - Would You Ever"))
+
         val adapter = RecentRecyclerAdapter(albums)
         recycler.adapter = adapter
 
@@ -58,12 +55,11 @@ class HomeFragment : Fragment() {
         //Glide.with(this).load("https://pbs.twimg.com/media/CtcVNESWIAEYGWI.jpg").into(imgForYou)
 
         val adviceAlbums = ArrayList<AdviceForYouDTO>()
-        adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/913c7ccb86562d204b191ae6eed52c2853b90094", "In My Mind"))
+        adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/ab67616d0000b273d883931be2f5cdf9c9270088", "Feelin Good"))
         adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/7f587bc2606cdd9907d7452e92a2158c63fa8a6e", "Yeni Müzik Radarı"))
          //adviceAlbums.add(AdviceForYouDTO("https://m.media-amazon.com/images/I/51hJnI9-rZL._AA256_.jpg", "Under the Covers by Alice Fredenham"))
-        adviceAlbums.add(AdviceForYouDTO("https://lineup-images.scdn.co/wrapped-2021-top100_LARGE-tr.jpg", "Future Music"))
-        adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/5dc1d866121c0e8d7063996841c1023ea95ea0e6", "Toulouse - Original Mix, a song by Nicky Romero"))
-        adviceAlbums.add(AdviceForYouDTO("https://i.scdn.co/image/913c7ccb86562d204b191ae6eed52c2853b90094", "In My Mind"))
+        adviceAlbums.add(AdviceForYouDTO("https://lineup-images.scdn.co/wrapped-2021-top100_LARGE-tr.jpg", "En Çok Dinlediğin Şarkılar"))
+
 
          val adviceAdapter = AdviceForYouAdapter(adviceAlbums)
         adviceRecycler.adapter=adviceAdapter

@@ -13,4 +13,5 @@
     <color name="colorTabs">#202123</color>
     <color name="colorNullFragment">#141414</color>
     <color name="colorTransparent">#00000000</color>
+    <color name="statusbar">#2a2b34</color>
 </resources>
